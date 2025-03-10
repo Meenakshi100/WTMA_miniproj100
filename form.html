@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN IN PAGE</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1>Sign Up Form</h1>
+
+    <form id="signupForm" onsubmit="return validateForm()">
+  
+         <label for="fname">First name:</label>
+         <input type="text" id="fname" name="fname"><br>
+         <label for="lname">Last name:</label>
+         <input type="text" id="lname" name="lname"><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email"><br>
+         <label for="dob"> Date of Birth:</label>
+         <input type="date" id="dob" name="dob"><br>
+         <label for="age">Age:</label>
+         <input type="number" id="age" name="age"><br>
+         <label for="gender">Gender:</label>
+         <div class="gender_options">
+         <input type="radio" id="male" name="gender" value="male">
+         <label for="male">Male</label>
+         <input type="radio" id="female" name="gender" value="female">
+         <label for="female">Female</label>
+         <input type="radio" id="other" name="gender" value="other">
+         <label for="other">Other</label><br>
+         </div>
+         <label for="phno"> Phone Number:</label>
+         <input type="tel" id="phno" name="phno"><br>
+         <label for="address"> Address:</label>
+         <textarea id="address" name="address" required></textarea><br>
+         <input type="submit" value="Sign in">
+</form>    
+<h2>Provided Information</h2>
+<table id="resultTable" style="width:100%; border: 1px solid #ddd; display:none;">
+    <thead>
+        <tr>
+            <th>Field</th>
+            <th>Data Entered</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script src="form.js"></script>
+</body>
+</html>
